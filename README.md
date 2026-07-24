@@ -1,6 +1,6 @@
 # Collision Damage
 ![Farming Simulator 25](https://img.shields.io/badge/Farming%20Simulator-25-4C8C2B)
-[![ModHub](https://img.shields.io/badge/ModHub-Download-7CB342)](https://www.farming-simulator.com/mod.php?mod_id=361963&title=fs2025) [![Version](https://img.shields.io/badge/Version-1.2.0.0-blue)](https://github.com/)
+[![ModHub](https://img.shields.io/badge/ModHub-Download-7CB342)](https://www.farming-simulator.com/mod.php?mod_id=361963&title=fs2025) [![Version](https://img.shields.io/badge/Version-1.2.0.0-blue)](https://github.com/Dude23-mods/FS25_CollisionDamage/releases/download/v1.2.0.0/FS25_CollisionDamage.zip)
 
 Collision Damage adds additional vehicle damage after stronger collisions in Farming Simulator 25.
 
