@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="110">
+    <author>Dude23</author>
+    <version>1.2.0.0</version>
+    <title>
+        <de>Unfallschaden</de>
+        <en>Collision Damage</en>
+        <fr>Dégâts De Collision</fr>
+    </title>
+    <description>
+        <de><![CDATA[Fügt zusätzlichen Fahrzeugschaden nach stärkeren Zusammenstößen hinzu.
+
+Der Mod nutzt das vorhandene Giants-Schadenssystem. Es gibt keine sichtbaren Verformungen, aber der normale Schadenswert des Fahrzeugs steigt und kann wie gewohnt repariert werden.
+
+Erkannt werden stärkere Aufpralle, wenn der sensorbasierte Prüfpfad einen externen Kontakt im Fahr- oder Sensorbereich bestätigen kann. Wenn zwei benutzbare Fahrzeuge, Anhänger oder Geräte zusammenstoßen, kann auch das getroffene Objekt denselben zusätzlichen Schadenswert erhalten, sofern es ein eigenes Schadenssystem besitzt.
+
+Statische Hindernisse wie Gebäude oder Bäume werden nicht beschädigt. Eigene angehängte Geräte oder Anhänger des gefahrenen Fahrzeugverbands werden nicht als zweiter Unfallteilnehmer gewertet.
+
+Die Schadensberechnung läuft serverseitig und verwendet die vorhandene Speicherung und Synchronisierung des Spiels.
+
+1.2.0.0:
+- Kollisionserkennung vollständig überarbeitet
+- Aufprallschäden werden nun zuverlässiger erkannt
+- Kollisionen mit Frontlader, Schaufel und anderen angebauten Geräten werden besser berücksichtigt
+- Weniger Fehlauslösungen beim Bremsen, Lenken sowie beim An- und Abkuppeln
+- Leistung und Stabilität verbessert
+
+1.1.1.0:
+- Problem behoben, bei dem eine starke Bremsung auf freier Fläche als Schadensfall erkannt wurde
+- Problem behoben, bei dem angehängte Geräte als Kollision erkannt und dadurch laufend Schaden verursacht haben
+
+1.1.0.0:
+- Stabilitätsverbesserungen
+- Die Schadenshöhe kann jetzt in den Spieleinstellungen angepasst werden. 100 Prozent entspricht der Standardwirkung.]]></de>
+
+        <en><![CDATA[Adds additional vehicle damage after stronger collisions.
+
+The mod uses the existing Giants damage system. There are no visible deformations, but the normal damage value of the vehicle increases and can be repaired as usual.
+
+Stronger impacts are detected when the sensor-based check can confirm an external contact in the travel or sensor area. When two usable vehicles, trailers or tools collide, the hit object can also receive the same additional damage value if it has its own damage system.
+
+Static obstacles such as buildings or trees are not damaged. The driven vehicle combination's own attached tools or trailers are not counted as a second crash participant.
+
+Damage calculation runs on the server side and uses the game's existing saving and synchronization.
+
+1.2.0.0:
+- Collision detection completely reworked
+- Impact damage is now detected more reliably
+- Collisions involving front loaders, buckets and other attached equipment are better taken into account
+- Fewer false triggers while braking, steering, attaching or detaching equipment
+- Improved performance and stability
+
+1.1.1.0:
+- Fixed an issue where hard braking on open ground was detected as a damage event
+- Fixed an issue where attached tools were detected as collisions and therefore caused continuous damage
+
+1.1.0.0:
+- Stability improvements
+- The damage amount can now be adjusted in the game settings. 100 percent corresponds to the standard effect.]]></en>
+
+        <fr><![CDATA[Ajoute des dégâts supplémentaires aux véhicules après des collisions importantes.
+
+Le mod utilise le système de dégâts existant de Giants. Il n'y a pas de déformations visibles, mais la valeur normale des dégâts du véhicule augmente et peut être réparée comme d'habitude.
+
+Les impacts importants sont détectés lorsque le contrôle basé sur des capteurs peut confirmer un contact externe dans la zone de déplacement ou de détection. Lorsque deux véhicules, remorques ou outils utilisables entrent en collision, l'objet touché peut également recevoir la même valeur de dégâts supplémentaires s'il possède son propre système de dégâts.
+
+Les obstacles statiques comme les bâtiments ou les arbres ne sont pas endommagés. Les outils ou remorques attelés au propre ensemble du véhicule conduit ne sont pas considérés comme un second participant à l'accident.
+
+Le calcul des dégâts est effectué côté serveur et utilise la sauvegarde et la synchronisation existantes du jeu.
+
+1.2.0.0 :
+- Détection des collisions entièrement retravaillée
+- Les dégâts d'impact sont désormais détectés de manière plus fiable
+- Les collisions avec un chargeur frontal, un godet ou d'autres outils attelés sont mieux prises en compte
+- Moins de faux déclenchements lors du freinage, du braquage, de l'attelage ou du dételage
+- Performances et stabilité améliorées
+
+1.1.1.0 :
+- Correction d'un problème où un freinage brusque sur une zone dégagée était détecté comme un cas de dégâts
+- Correction d'un problème où les outils attelés étaient détectés comme une collision et causaient ainsi des dégâts continus
+
+1.1.0.0 :
+- Améliorations de stabilité
+- L'intensité des dégâts peut maintenant être ajustée dans les paramètres de jeu. 100 pour cent correspond à l'effet standard.]]></fr>
+    </description>
+    <l10n>
+        <text name="setting_collisionDamageSection">
+            <de>Unfallschaden</de>
+            <en>Collision Damage</en>
+            <fr>Dégâts De Collision</fr>
+        </text>
+        <text name="setting_collisionDamageMultiplier">
+            <de>Unfallschaden: Schadenshöhe</de>
+            <en>Collision Damage: Damage Amount</en>
+            <fr>Dégâts De Collision : Intensité Des Dégâts</fr>
+        </text>
+        <text name="setting_collisionDamageMultiplier_desc">
+            <de>Legt fest, wie stark der zusätzliche Unfallschaden ausfällt. 100 Prozent entspricht der Standardwirkung.</de>
+            <en>Sets how strong the additional collision damage is. 100 percent matches the default effect.</en>
+            <fr>Définit l'intensité des dégâts supplémentaires après collision. 100 pour cent correspond à l'effet standard.</fr>
+        </text>
+    </l10n>
+    <iconFilename>icon_collisionDamage.dds</iconFilename>
+    <multiplayer supported="true" />
+    <extraSourceFiles>
+        <sourceFile filename="scripts/FSCollisionDamage.lua" />
+        <sourceFile filename="scripts/FSCollisionDamageSensor.lua" />
+    </extraSourceFiles>
+</modDesc>
